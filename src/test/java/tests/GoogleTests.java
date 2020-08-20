@@ -37,14 +37,4 @@ class GoogleTests {
         
         $("iframe[role='presentation']").shouldBe(enabled); 
     }
-
-    @Test
-    void yandexUnitFrameShouldOpen() {
-        open("https://yandex.ru");
-
-        $(byText("Настройка")).click(); 
-        $(byText("Настроить блоки")).click();
-
-        $(".hidden-blocks-popup__inside").shouldBe(enabled); 
-    }
 }
